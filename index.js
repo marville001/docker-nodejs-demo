@@ -14,7 +14,6 @@ app.get("/posts", async (req, res, next) => {
 
 		res.status(200).send(data)
 	} catch (error) {
-		console.log(error);
         res.status(500).json({
             message: "Failed To Get Posts",
             error: error.message,
